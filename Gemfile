@@ -1,5 +1,30 @@
 source 'https://rubygems.org'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'pry-rails'
+  gem 'capybara'
+  gem 'valid_attribute'
+  gem 'launchy'
+  gem 'email_spec'
+  gem 'dotenv-rails'
+  gem 'quiet_assets'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+gem 'devise'
+gem 'kaminari'
+gem 'simple_form'
+gem 'carrierwave'
+gem 'fog'
+gem 'carmen-rails'
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
